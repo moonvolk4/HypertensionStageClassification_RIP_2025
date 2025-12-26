@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/assets/header_icon.png" />
+    <link rel="manifest" href="/HypertensionStageClassification-frontend/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Классификатор АГ</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker
+            .register('/HypertensionStageClassification-frontend/serviceWorker.js')
+            .then(function () {
+              console.log('service worker registered')
+            })
+            .catch(function (err) {
+              console.log('service worker not registered', err)
+            })
+        })
+      }
+    </script>
+  </body>
+</html>

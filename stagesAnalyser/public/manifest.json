@@ -1,0 +1,21 @@
+{
+  "name": "Hypertension Stage Classification",
+  "short_name": "HTN Stages",
+  "start_url": "/HypertensionStageClassification-frontend/",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#0d6efd",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/HypertensionStageClassification-frontend/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/HypertensionStageClassification-frontend/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
